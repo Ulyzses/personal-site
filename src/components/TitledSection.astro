@@ -1,0 +1,18 @@
+---
+export interface Props {
+    title: string;
+    invertColours?: boolean;
+}
+
+const { title, invertColours=false } = Astro.props as Props;
+---
+<section class={`content ${invertColours && 'invert'}`} >
+    <h2>{title}</h2>
+    <slot />
+</section>
+
+<style>
+    .invert * {
+        color: var(--color-white);
+    }
+</style>

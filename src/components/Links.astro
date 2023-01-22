@@ -1,0 +1,40 @@
+---
+import socials from '../resources/socials.json';
+import Social from './Social.astro';
+
+export interface Props {
+    size?: string;
+    inverse?: boolean;
+}
+
+const { size="1x", inverse=false } = Astro.props as Props;
+---
+
+
+<div class="links">
+    {socials.map((social) => (
+        <Social name={social.name} url={social.url} size={size} inverse={inverse} />
+    ))}
+</div>
+
+<style define:vars={{inverse}}>
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    line-height: 2;
+    color: var(--color-black);
+    margin-right: 10px;
+    background-image: none;
+}
+
+.links a:last-child {
+    margin-right: 0;
+}
+
+.fa-inverse {
+    color: var(--color-white);
+}
+</style>

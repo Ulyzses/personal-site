@@ -1,0 +1,38 @@
+---
+import LayoutEmpty from "../layouts/LayoutEmpty.astro";
+import loadingCat from "/media/loading-cat.gif";
+import loadingCatSmall from "/media/loading-cat-small.gif";
+---
+
+<LayoutEmpty>
+    <img src={loadingCat} class="big" alt="Loading Cat">
+    <img src={loadingCatSmall} class="small" alt="Loading Cat">
+    <h1>404 Not Found</h1>
+    <p>The resource you requested (<code>{Astro.url.pathname}</code>) cannot be found.</p>
+</LayoutEmpty>
+
+
+
+<style>
+p {
+    margin-top: 0
+}
+
+img {
+    border-radius: 1rem;
+}
+
+img.small {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    img.big {
+        display: none;
+    }
+
+    img.small {
+        display: block;
+    }
+}
+</style>

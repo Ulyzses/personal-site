@@ -1,0 +1,90 @@
+[
+    {
+        "title": "Program Manager",
+        "affiliation": "UP Association of Computer Science Majors (UP CURSOR) App Batch 2223A",
+        "type": "voluntary",
+        "startDate": "2022-11",
+        "endDate": "2022-12",
+        "description": [
+            "Led a committee of UP CURSOR applicants in organising the program for a 2-day event held via Zoom where 100+ participants registered",
+            "Responsible for the overall management of the program, including the development of the program flow and its facilitation"
+        ]
+    },
+    {
+        "title": "Automation Developer",
+        "affiliation": "UP Career Assistance Program for Engineering Students (UP CAPES)",
+        "type": "voluntary",
+        "startDate": "2022-09",
+        "endDate": "present",
+        "description": [
+            "Created an internal script that automatically generates bespoke Memorandum of Agreements for the organisation's company partners (Technologies used: Google Apps Script, Google Sheets, Google Docs)"
+        ]
+    },
+    {
+        "title": "BS Computer Science Student",
+        "affiliation": "UP Diliman",
+        "type": "education",
+        "startDate": "2021-09",
+        "endDate": "present",
+        "description": [
+            "University Scholar (First Semester AY 2021-2022—Present)",
+            "DOST-SEI Merit Scholar"
+        ]
+    },
+    {
+        "title": "Website Manager",
+        "affiliation": "WhatsTheDamage.net",
+        "type": "work",
+        "startDate": "2021-02",
+        "endDate": "present",
+        "description": [
+            "Led a team in writing and managing over 1,000 directory listings of locksmith, key-cutting, shoe repair, and watch repair in the United Kingdom",
+            "Spearheaded the creation and dissemination of a survey sent to over 600 locksmith businesses in the UK and Northern Ireland, and analysed its results",
+            "Created the frontend and configured the backend of 7 other related websites (Technologies used: WordPress, CSS, Bootstrap)"
+        ]
+    },
+    {
+        "title": "Virtual Assistant",
+        "affiliation": "OkayRelax",
+        "type": "work",
+        "startDate": "2020-09",
+        "endDate": "present",
+        "description": [
+            "Researched and provided educated insights about various topics based on the client’s needs",
+            "Reached out to different offices and people to enquire as well as set personal appointments as the client requested"
+        ]
+    },
+    {
+        "title": "Intern",
+        "affiliation": "STAMINA4Space Program, UP Diliman, EEEI",
+        "type": "internship",
+        "startDate": "2021-03",
+        "endDate": "2021-03",
+        "description": [
+            "Tracked the passing of select micro, weather, and amateur radio satellites",
+            "Decoded and processed the data received from passing satellites and logged the information in their database"
+        ]
+    },
+    {
+        "title": "Math Expert",
+        "affiliation": "Photomath",
+        "type": "work",
+        "startDate": "2020-09",
+        "endDate": "2021-01",
+        "description": [
+            "Solved and wrote around 200 step-by-step solutions to Algebra and Geometry problems on the Photomath platform",
+            "Reviewed the correctness and rated the quality of other Math Experts’ solutions to problems in the same fields"
+        ]
+    },
+    {
+        "title": "High School Student",
+        "affiliation": "UP Integrated School",
+        "type": "education",
+        "startDate": "2015-06",
+        "endDate": "2021-07",
+        "description": [
+            "Graduated with High Honours in the Applied Sciences and Engineering Track",
+            "Created a website for our thesis for real-time tracking of grades for use of more than 100 students (Technologies used: PHP, MySQL, CSS, Bootstrap)"
+        ]
+    }
+]

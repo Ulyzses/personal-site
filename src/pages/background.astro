@@ -1,0 +1,25 @@
+---
+import timeline from "../resources/timeline.json";
+
+import Layout from "../layouts/Layout.astro";
+import Timeline from "../components/Timeline.jsx";
+import Filter from "../components/Filter.astro";
+import Experience from "../components/Experience.astro";
+---
+
+<Layout title="Background">
+    <section class="background">
+        <div class="container-narrow">
+            <div>
+                <h1>My Timeline</h1>
+                <p>This contains more or less my entire academic and professional background.</p>
+            </div>
+            <Timeline client:load/>
+            <p>*UP: University of the Philippines</p>
+        </div>
+    </section>
+</Layout>
+
+<style>
+
+</style>

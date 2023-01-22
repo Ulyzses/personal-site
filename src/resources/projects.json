@@ -1,0 +1,56 @@
+[
+    {
+        "title": "This Website",
+        "tags": ["HTML", "CSS", "Node.js", "Astro", "React.js"],
+        "content": "This website is my first real (and functional) website made outside of academics, essentially acting as my portfolio. It's built using Astro, the hot new web framework at the time of coding, with a few touches of React.js here and there.",
+        "links": [
+            {
+                "name": "GitHub Repository",
+                "url": "https://github.com/Ulyzses/personal-site"
+            }
+        ]
+    },
+    {
+        "title": "Katheryne Discord Bot",
+        "tags": ["Node.js", "Discord.js", "MongoDB"],
+        "content": "A custom bot I made for my friend group's Genshin Impact Discord server. Her features include: automatic UID verification, role assignment, resin and parametric transformer tracking, gacha chance calculator, as well as other administrative functions. It is built using the Discord.js library with the database hosted at MongoDB Atlas.",
+        "links": []
+    },
+    {
+        "title": "#Forestoration",
+        "tags": ["HTML", "CSS", "JavaScript"],
+        "content": "A website created for our Grade 11 CS class, with the goal of using JavaScript in making dynamic websites. Inspired by our STSE class, I and two of my friends decided to make an advocacy website targeting the restoration of forests, particularly in the Philippines. It features a side-scrolling page with a parallax background, as well as a simple random trivia generator in one of the pages within.",
+        "links": [
+            {
+                "name": "Website (Hosted on GitHub)",
+                "url": "https://ulyzses.github.io/forestoration/index.html"
+            },
+            {
+                "name": "GitHub Repository",
+                "url": "https://github.com/Ulyzses/forestoration"
+            }
+        ]
+    },
+    {
+        "title": "Solar System Visualiser",
+        "tags": ["HTML", "CSS", "JavaScript"],
+        "content": "Our Grade 10 Computer Science group project in high school which was supposed to show everything we've learned regarding HTML and CSS. My group decided to include JavaScript into the mix and got a good solar system information website. It features a simple animated SVG map of the solar system and basic information regarding the Sun and planets (including Pluto).",
+        "links": [
+            {
+                "name": "GitHub Repository",
+                "url": "https://github.com/Ulyzses/solar-system-visualiser"
+            }
+        ]
+    },
+    {
+        "title": "UPIS CDR",
+        "tags": ["PHP", "CSS", "JavaScript", "MySQL"],
+        "content": "A web application I made for our supposed thesis in Grade 11. It's a web-based grade portal for UPIS students, with the goal of making the process of viewing grades easier. It features a simple login system, a grade viewing page, and announcements. It is built using PHP, with the database hosted at MySQL. Unfortunately, due to the COVID pandemic, the thesis was cancelled and I was not able to finish it.",
+        "links": [
+            {
+                "name": "GitHub Repository",
+                "url": "https://github.com/Ulyzses/cdr"
+            }
+        ]
+    }
+]

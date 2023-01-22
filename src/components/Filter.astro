@@ -1,0 +1,40 @@
+---
+export interface Props {
+    choices: string[];
+}
+
+const { choices } = Astro.props as Props;
+---
+
+{choices.map((choice) => (
+    <input type="radio" id={choice} name="choice" value={choice.toLowerCase()} />
+    <label for={choice}>{choice}</label>
+))}
+
+<style>
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+    background-color: var(--color-primary-light);
+}
+</style>
+
+<script>
+const radios = document.querySelectorAll('input[type="radio"]');
+radios.forEach((radio) => {
+    radio.addEventListener('change', (event) => {
+        const { value } = event.target as HTMLInputElement;
+    });
+});
+</script>

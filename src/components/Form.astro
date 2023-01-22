@@ -1,0 +1,22 @@
+---
+export interface Props {
+    name: string;
+    title?: string;
+}
+
+const { name, title } = Astro.props as Props;
+---
+
+<form id={name}>
+    {title && <h3>{title}</h3>}
+    <slot />
+</form>
+
+<style>
+form {
+    padding: 24px;
+    background-color: #fdfeff;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+</style>

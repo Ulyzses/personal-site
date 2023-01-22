@@ -1,0 +1,23 @@
+---
+import '../styles/forms.css';
+
+type HTMLInputTypeAttribute = "button" | "checkbox" | "color" | "date" | "datetime-local" | "email" | "file" | "hidden" | "image" | "month" | "number" | "password" | "radio" | "range" | "reset" | "search" | "submit" | "tel" | "text" | "time" | "url" | "week";
+
+export interface Props {
+    name: string;
+    type: HTMLInputTypeAttribute;
+    id: string;
+    placeholder?: string;
+    required?: boolean;
+}
+
+const { name, type, id, placeholder, required } = Astro.props as Props;
+---
+
+<div class="input-group">
+    <label for={id} class={required && 'required'}>{name}</label>
+    <input type={type} name={name.toLowerCase()} id={id} placeholder={placeholder} required={required} />
+</div>
+
+<style>
+</style>

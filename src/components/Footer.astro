@@ -1,0 +1,43 @@
+---
+import Links from "./Links.astro";
+---
+
+<footer class="footer">
+    <div class="footer-container container-wide stretch">
+        <div>
+            <p>Find me here!</p>
+            <Links size="2x" inverse={true} />
+        </div>
+        <div>
+            <p>Made with ❤ using Astro</p>
+            <p><strong>Copyright © 2023 Marius Barcenas</strong></p>
+        </div>
+    </div>
+</footer>
+
+<style>
+.footer {
+    background: var(--color-black);
+    color: #fff;
+    text-align: center;
+    /* margin-top: 60px; */
+}
+
+.footer .footer-container div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .footer-container div:first-child p {
+    text-align: left;
+}
+
+.footer .footer-container div:last-child p {
+    text-align: right;
+}
+
+.footer .footer-container div p {
+    color: var(--color-white);
+    margin: 0;
+}
+</style>

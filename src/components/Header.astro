@@ -1,0 +1,74 @@
+---
+import '../styles/animations.css';
+
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1);
+---
+
+<header class="header">
+    <div class="header-container container-wide stretch">
+        <div class="logo">
+            <a href="/"><h3>Marius Barcenas</h3></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a class={currentPath === "" ? "active" : ""} href="/">Home</a></li>
+                <li><a class={currentPath === "background" ? "active" : ""} href="/background">Background</a></li>
+                <li><a class={currentPath === "blog" ? "active" : ""} href="/blog">Blog</a></li>
+                <li><a class={currentPath === "contact" ? "active" : ""} href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<style>
+.header {
+    background-color: var(--color-white);
+    position: sticky;
+    top: 0;
+}
+
+.header--scrolled {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header h3 {
+    font-weight: 500;
+}
+
+.header a {
+    color: var(--color-black);
+    /* background-image: none; */
+    text-decoration: none;
+}
+
+.active {
+    background-color: var(--color-primary-light);
+}
+
+.header nav ul {
+    display: flex;
+}
+
+.header nav ul li {
+    padding: 0 10px;
+}
+
+</style>
+
+<script>
+    const header = document.querySelector('.header');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 0) {
+            header.classList.add('header--scrolled');
+        } else {
+            header.classList.remove('header--scrolled');
+        }
+    });
+</script>

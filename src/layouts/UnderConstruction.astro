@@ -1,0 +1,26 @@
+---
+import LayoutEmpty from "./LayoutEmpty.astro";
+import constructionDog from "/media/construction-dog.gif";
+
+export interface Props {
+    title: string;
+}
+
+const { title } = Astro.props as Props;
+---
+
+<LayoutEmpty title={title}>
+    <img src={constructionDog} alt="">
+    <h1>Under Construction</h1>
+    <p>The page you requested is currently still not ready. Please check again soon!</p>
+</LayoutEmpty>
+
+<style>
+p {
+    margin-top: 0
+}
+
+img {
+    border-radius: 1rem;
+}
+</style>

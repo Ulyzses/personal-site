@@ -1,0 +1,27 @@
+---
+export interface Props {
+    name: string;
+    url: string;
+    size?: string;
+    inverse?: boolean;
+}
+
+const { name, url, size="1x", inverse=false } = Astro.props as Props;
+---
+
+<a href={url} class="link" target="_blank">
+    <i class={`fa-${name} fa-brands fa-${size} ${inverse && 'fa-inverse'}`}></i>
+</a>
+
+<style define:vars={{inverse}}>
+.link {
+    line-height: 2;
+    color: var(--color-black);
+    margin-right: 10px;
+    background-image: none;
+}
+
+.fa-inverse {
+    color: var(--color-white);
+}
+</style>

@@ -1,0 +1,123 @@
+:root {
+    --color-white: #FAFBFD;
+    --color-black: #010307;
+    --color-grey: #696971;
+    --color-primary: #2541B2;
+    --color-primary-light: #DDE3F8;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* outline: solid red 1px; */
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: var(--color-white);
+}
+
+section {
+    padding: 0.5rem 0;
+}
+
+p, h1, h2, h3 {
+    color: var(--color-black);
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 24px 0 12px;
+}
+
+h2 {
+    font-size: 3rem;
+    margin: 16px 0 8px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 8px 0 4px;
+}
+
+p {
+    font-size: 18px;
+    margin: 24px 0 12px;
+    text-align: justify;
+}
+
+a {
+    color: inherit;
+    text-decoration: 3px underline var(--color-primary-light);
+    /* color: var(--color-grey); */
+
+    background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, var(--color-primary-light) 50%);
+    background-position: -0% 0;
+    background-size: 200% auto;
+    transition: background-position 0.2s ease;
+}
+
+.dark-bg a {
+    background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, var(--color-primary) 50%);
+    text-decoration: 3px underline var(--color-primary);
+}
+
+a:hover {
+    /* color: var(--color-primary); */
+    background-position: -100% 0;
+    /* text-decoration: none; */
+
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.container-wide {
+    padding: 30px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.container-narrow {
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Utilities */
+
+.row {
+    width: calc(100% + 16px);
+    display: flex;
+    flex-direction: row;
+    margin: 0 -8px;
+}
+
+.row > * {
+    flex: 1;
+    padding: 0 8px;
+}
+
+.stretch {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+@media (max-width: 960px) {
+    .row {
+        flex-direction: column;
+    }
+}

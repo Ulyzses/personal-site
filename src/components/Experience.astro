@@ -1,0 +1,65 @@
+---
+import { format } from 'date-fns';
+
+export interface Props {
+    filter?: string;
+    experience: {
+        title: string;
+        type: string;
+        affiliation: string;
+        startDate: string;
+        endDate: string;
+        description: string[];
+    }
+}
+
+const { filter, experience } = Astro.props as Props;
+const { title, type, affiliation, startDate, endDate, description } = experience;
+
+let start = format(new Date(startDate), 'MMMM yyyy');
+// let start = startDate;
+let end = (endDate === "present") ? "Present" : format(new Date(endDate), 'MMMM yyyy');
+const date = `${start}–${end}`;
+---
+
+<div class="exp" data-type={type}>
+    <p class="date">{date}</p>
+    <h3>{title}</h3>
+    <p class="subtitle">{affiliation}</p>
+    <ul>
+        {description.map((item) => (
+            <li>{item}</li>
+        ))}
+    </ul>
+</div>
+
+<style>
+.exp {
+    background: #fdfeff;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 24px 0;
+}
+
+.exp h3 {
+    margin: 0;
+}
+
+.exp .subtitle {
+    margin-top: 0;
+    color: gray;
+}
+
+.exp .date {
+    margin: 0;
+    float: right;
+    color: gray;
+}
+
+.exp ul li {
+    font-size: 16px;
+    list-style: disc;
+    margin-left: 20px;
+}
+</style>

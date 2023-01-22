@@ -1,81 +1,148 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import TitledSection from "../components/TitledSection.astro";
+import Card from "../components/Card.astro";
+
+import projects from "../resources/projects.json";
+import sablito from "/public/media/sablito_20.jpg";
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
+<Layout title="Hello!">
+    <section class="intro">
+        <div class="container">
+            <div class="content">
+                <div class="main">
+                    <h1>Hey, I'm <span class="name">Marius</span>.</h1>
+                    <h1>I'm <i>not</i> a designer.</h1>
+                </div>
+                <div class="text">
+                    <h3>But I do like to make stuff</h3>
+                </div>
+            </div>
+            <div class="img">
+                <img src={sablito} alt="">
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <TitledSection title="About Me" invertColours={true}>
+                <p>
+                    I'm a 2nd year BS Computer Science student in the University of the Philippines-Diliman. Currently, I am part of the IT committee of the UP Career Assistance Program for Engineering Students (UP CAPES) as well as an applicant to the UP Association of Computer Science Majors (UP CURSOR)
+                </p>
+                <p>
+                    I have a passion for creating and seeing things I make come to life. However, I do admit that I do not have a designer's eye, so I tend to stick with more practical, less visually-demanding personal projects. Despite that, I am currently learning web development and this website is a culmination of that.
+                </p>
+                <p class="dark-bg">
+                    I haven't had any professional experience yet in the field, but I'm looking for opportunities to gain some. If you know of any, please <a href="/contact">let me know</a>!
+                </p>
+            </TitledSection>
+            
+            <p></p>
+        </div>
+    </section>
+    <section class="projects">
+        <div class="container">
+            <TitledSection title="Projects">
+                <p>Here are some of the stuff I've done in the past.</p>
+            </TitledSection>
+            <div class="content">
+                {projects.map((project) => (
+                    <Card title={project.title} tags={project.tags}>
+                        <p>{project.content}</p>
+                        <p>
+                            {project.links.map((link) => (
+                                    <a href={link.url} target="_blank">{link.name}</a><br />
+                                
+                            ))}
+                        </p>
+                    </Card>
+                ))}
+            </div>
+        </div>
+    </section>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
+/* Intro */
+
+.intro .container {
+    margin: 30px auto;
+    min-height: calc(70vh);
+    display: flex;
+    justify-content: space-between;
+    max-width: min(1200px, 80vw);
+}
+
+.intro .container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro .container .content .main {
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.intro h1 {
+    margin: 0
+}
+
+.intro h3 {
+    font-weight: normal;
+}
+
+.intro img {
+    max-height: 35vh;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.intro .name {
+    background-color: var(--color-primary-light);
+}
+
+/* About */
+
+.about {
+    background: var(--color-black);
+    color: var(--color-white);
+}
+
+.about p {
+    color: var(--color-white);
+}
+
+/* Projects */
+
+.projects .content {
+    display: flex;
+    margin: 0 -0.5rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-rows: var(--row_increment);
+    justify-content: center;
+}
+
+@media (max-width: 960px) {
+    .intro .container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .intro .container .content {
+        text-align: center;
+    }
+
+    .intro img {
+        max-height: 30vh;
+    }
+
+}
 </style>

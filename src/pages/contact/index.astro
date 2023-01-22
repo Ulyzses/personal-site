@@ -1,0 +1,55 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import TitledSection from "../../components/TitledSection.astro";
+import Form from "../../components/Form.astro";
+import Input from "../../components/Input.astro";
+import Textbox from "../../components/Textbox.astro";
+---
+<Layout title="Contact">
+    <section class="contact">
+        <div class="container-narrow">
+            <h1>Get in touch</h1>
+            <TitledSection title="Grad Pic">
+                <p>If you know me from high school and you want a grad pic from me, click <a href="/contact/grad-pic">here</a>. I can't guarantee you'll get one but if I decide to actually do reprints, maybe you'll get one, who knows.</p>
+            </TitledSection>
+            <TitledSection title="Other Stuff">
+                <p>For all other intents and purposes, you may email me at <a href="mailto:mariusulyzses.barcenas@gmail.com">mariusulyzses.barcenas@gmail.com</a> or use the form below. I'd prefer the latter though, thank you very much.</p>
+            </TitledSection>
+            <Form name="contact">
+                <div class="row">
+                    <Input
+                    name="Name"
+                    type="text"
+                    id="name"
+                    placeholder="John Doe"
+                    required={false}
+                    />
+                    <Input
+                        name="Email"
+                        type="email"
+                        id="email"
+                        placeholder="johndoe@example.com"
+                        required={false}
+                    />
+                </div>
+                <Textbox
+                    name="Message"
+                    id="message"
+                    placeholder="Your message here."
+                    resize="vertical"
+                    rows={10}
+                    required={true}
+                />
+
+                <button class="btn" type="submit">Send</button>
+            </Form>
+        </div>
+    </section>
+</Layout>
+
+<script>
+    document.querySelector('form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert("The form is still unfortunately under construction. Please just use the email.");
+    });
+</script>
