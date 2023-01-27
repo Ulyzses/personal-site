@@ -14,7 +14,7 @@ const { name, title, method="POST", netlify=false, honeypot="", action="" } = As
 const status = Astro.url.searchParams.get("status");
 ---
 
-<form 
+<form onsubmit="submit"
     id={name.toLowerCase()}
     name={name.toLowerCase()}
     method={method} 
