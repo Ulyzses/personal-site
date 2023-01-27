@@ -19,6 +19,7 @@ const status = Astro.url.searchParams.get("status");
     name={name.toLowerCase()}
     method={method} 
     data-netlify={netlify ? "true" : "false"}
+    data-netlify-honeypot={honeypot ? honeypot : null}
     action={action} >
     {honeypot && <input name={honeypot} hidden/>}
     {title && <h3>{title}</h3>}
