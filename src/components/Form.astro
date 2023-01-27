@@ -1,15 +1,29 @@
 ---
+import Status from './Status.astro';
+
 export interface Props {
     name: string;
     title?: string;
+    method?: string;
+    netlify?: boolean;
+    honeypot?: string;
+    action?: string;
 }
 
-const { name, title } = Astro.props as Props;
+const { name, title, method="POST", netlify=false, honeypot="", action="" } = Astro.props as Props;
+const status = Astro.url.searchParams.get("status");
 ---
 
-<form id={name}>
+<form 
+    id={name.toLowerCase()}
+    name={name.toLowerCase()}
+    method={method} 
+    data-netlify={netlify ? "true" : "false"}
+    action={action} >
+    {honeypot && <input name={honeypot} hidden/>}
     {title && <h3>{title}</h3>}
     <slot />
+    <Status status={status} />
 </form>
 
 <style>

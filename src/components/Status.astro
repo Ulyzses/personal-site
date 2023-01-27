@@ -1,0 +1,32 @@
+---
+export interface Props {
+    status: string;
+}
+
+const { status } = Astro.props as Props;
+---
+
+{(status === "success") && <p id="status" class="status success">The form was sent successfully!</p>}
+{(status === "error") && <p id="status" class="status error">An error occurred while sending the form. Please try again.</p>}
+
+<style>
+.status {
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    font-size: smaller;
+}
+
+.error {
+    border-color: #D8000C;
+    color: #D8000C;
+    background-color: #FFBABA;
+}
+
+.success {
+    border-color: #4F8A10;
+    color: #4F8A10;
+    background-color: #DFF2BF;
+
+}
+</style>

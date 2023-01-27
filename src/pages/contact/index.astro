@@ -15,7 +15,7 @@ import Textbox from "../../components/Textbox.astro";
             <TitledSection title="Other Stuff">
                 <p>For all other intents and purposes, you may email me at <a href="mailto:mariusulyzses.barcenas@gmail.com">mariusulyzses.barcenas@gmail.com</a> or use the form below. I'd prefer the latter though, thank you very much.</p>
             </TitledSection>
-            <Form name="contact">
+            <Form name="contact" netlify={true} honeypot="bot-field" action="/contact/send">
                 <div class="row">
                     <Input
                     name="Name"
@@ -46,10 +46,3 @@ import Textbox from "../../components/Textbox.astro";
         </div>
     </section>
 </Layout>
-
-<script>
-    document.querySelector('form').addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert("The form is still unfortunately under construction. Please just use the email.");
-    });
-</script>
