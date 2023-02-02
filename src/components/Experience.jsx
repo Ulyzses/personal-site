@@ -5,9 +5,20 @@ import "../styles/react/Experience.css";
 const Experience = (props) => {
     const { title, affiliation, startDate, endDate, description } = props.experience;
 
-    let start = format(new Date(startDate), 'MMMM yyyy');
-    let end = (endDate === "present") ? "Present" : format(new Date(endDate), 'MMMM yyyy');
-    const date = `${start}–${end}`;
+    let [ startMonth, startYear ] = format(new Date(startDate), 'MMMM yyyy').split(" ");
+    let [ endMonth, endYear ] = (endDate === "present") ? [ "Present", ""] : format(new Date(endDate), 'MMMM yyyy').split(" ");
+
+    let date;
+
+    if ( startYear === endYear ) {
+        if ( startMonth === endMonth ) {
+            date = `${startMonth} ${startYear}`;
+        } else {
+            date = `${startMonth}–${endMonth} ${startYear}`;
+        }
+    } else {
+        date = `${startMonth} ${startYear}–${endMonth} ${endYear}`;
+    }
 
     return (
         <div className="exp">
