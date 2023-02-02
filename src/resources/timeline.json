@@ -1,12 +1,23 @@
 [
     {
+        "title": "Tech Volunteer",
+        "affiliation": "UP Association of Computer Science Majors (UP CURSOR)",
+        "type": "voluntary",
+        "startDate": "2023-01",
+        "endDate": "2023-01",
+        "description": [
+            "Assisted in the facilitation of UP CURSOR's Tackle 2023: Virtual Tech Expo, a 3-day event that aims to help tech enthusiasts to interact with and learn from industry leaders in technology held via Zoom",
+            "Created a script to generate participant statistics for each day of the event and presented them to the event's organisers"
+        ]
+    },
+    {
         "title": "Program Manager",
         "affiliation": "UP Association of Computer Science Majors (UP CURSOR) App Batch 2223A",
         "type": "voluntary",
         "startDate": "2022-11",
         "endDate": "2022-12",
         "description": [
-            "Led a committee of UP CURSOR applicants in organising the program for a 2-day event held via Zoom where 100+ participants registered",
+            "Led a committee of UP CURSOR applicants in organising the program for UNPLUG: Life Outside Acads, a 2-day event which aims to help students rekindle their life outside academics held via Zoom",
             "Responsible for the overall management of the program, including the development of the program flow and its facilitation"
         ]
     },

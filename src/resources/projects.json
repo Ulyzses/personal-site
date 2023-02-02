@@ -11,6 +11,17 @@
         ]
     },
     {
+        "title": "CRS-RUPP Integration",
+        "tags": ["JavaScript"],
+        "content": "A prototype browser extension I made to help during my school's preenlistment period. It integrates old RUPP data with the CRS preenlistment module, allowing students to easily visually identify which instructors were highly rated by students in the past.",
+        "links": [
+            {
+                "name": "GitHub Repository",
+                "url": "https://github.com/Ulyzses/crs-rupp"
+            }
+        ]
+    },
+    {
         "title": "Katheryne Discord Bot",
         "tags": ["Node.js", "Discord.js", "MongoDB"],
         "content": "A custom bot I made for my friend group's Genshin Impact Discord server. Her features include: automatic UID verification, role assignment, resin and parametric transformer tracking, gacha chance calculator, as well as other administrative functions. It is built using the Discord.js library with the database hosted at MongoDB Atlas.",
