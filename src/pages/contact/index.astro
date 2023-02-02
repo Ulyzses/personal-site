@@ -16,6 +16,7 @@ import Textbox from "../../components/Textbox.astro";
                 <p>For all other intents and purposes, you may email me at <a href="mailto:mariusulyzses.barcenas@gmail.com">mariusulyzses.barcenas@gmail.com</a> or use the form below. I'd prefer the latter though, thank you very much.</p>
             </TitledSection>
             <Form name="contact" netlify={true} honeypot="bot-field" action="/contact/?status=success#status">
+                <input type="hidden" name="form-name" value="contact" />
                 <div class="row">
                     <Input
                     name="Name"
