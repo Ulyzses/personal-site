@@ -18,7 +18,7 @@ const Timeline = () => {
         <>
             <Filter
                 updateFilter={handleFilter}
-                choices={["All", "Work", "Voluntary", "Education"]}
+                choices={["All", "Work", "Internship", "Education", "Voluntary"]}
             />
             <div className="timeline">
                 {timeline
