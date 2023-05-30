@@ -1,5 +1,20 @@
 [
     {
+        "title": "Twitter Mis/Disinfo Analysis",
+        "tags": ["HTML", "CSS", "JavaScript", "Python"],
+        "content": "This is our group's output for our data science class in UP Diliman. We were tasked to analyse tweets which contained misinformation or disinformation regarding a topic of our choice, in our case, the red-tagging of Chad Booc. This website is the result of our research, which included all the steps from the start of scraping tweets to the final analysis of the data.",
+        "links": [
+            {
+                "name": "GitHub Repository",
+                "url": "https://github.com/Ulyzses/cs132"
+            },
+            {
+                "name": "Website",
+                "url": "https://ulyzses.github.io/cs132/"
+            }
+        ]
+    },
+    {
         "title": "This Website",
         "tags": ["HTML", "CSS", "Node.js", "Astro", "React.js"],
         "content": "This website is my first real (and functional) website made outside of academics, essentially acting as my portfolio. It's built using Astro, the hot new web framework at the time of coding, with a few touches of React.js here and there.",

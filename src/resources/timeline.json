@@ -1,5 +1,48 @@
 [
     {
+        "title": "Constitutional Amendments Team Representative",
+        "affiliation": "UP Association of Computer Science Majors (UP CURSOR)",
+        "type": "voluntary",
+        "startDate": "2023-05",
+        "endDate": "present",
+        "description": [
+            "Represented the External Affairs Committee in the Constitutional Amendments Team, which aims to amend UP CURSOR's constitution to better reflect the current state of the organisation"
+        ]
+    },
+    {
+        "title": "Programs Manager",
+        "affiliation": "UP Association of Computer Science Majors (UP CURSOR)",
+        "type": "voluntary",
+        "startDate": "2023-03",
+        "endDate": "present",
+        "description": [
+            "Created the program flow for Handog Kaalaman, UP CURSOR's flagship outreach program that aims to cultivate computer literacy in underprivileged communities",
+            "Handled the creation of lecture materials related to web development for use in the program"
+        ]
+    },
+    {
+        "title": "External Affairs Manager",
+        "affiliation": "UP Association of Computer Science Majors (UP CURSOR)",
+        "type": "voluntary",
+        "startDate": "2023-02",
+        "endDate": "present",
+        "description": [
+            "Responsible for monitoring the organisation's email for incoming partnership proposals and inquiries",
+            "Handled the liaison for an event partnership with another organisation in the university",
+            "Participated in the facilitation of the External Affairs Committee internship for applicants of UP CURSOR"
+        ]
+    },
+    {
+        "title": "Automation Developer",
+        "affiliation": "UP Association of Computer Science Majors (UP CURSOR)",
+        "type": "voluntary",
+        "startDate": "2023-02",
+        "endDate": "present",
+        "description": [
+            "Created scripts which streamlined internal processes in multiple stages of the organisation's application process"
+        ]
+    },
+    {
         "title": "Tech Volunteer",
         "affiliation": "UP Association of Computer Science Majors (UP CURSOR)",
         "type": "voluntary",
@@ -26,7 +69,7 @@
         "affiliation": "UP Career Assistance Program for Engineering Students (UP CAPES)",
         "type": "voluntary",
         "startDate": "2022-09",
-        "endDate": "present",
+        "endDate": "2023-05",
         "description": [
             "Created an internal script that automatically generates bespoke Memorandum of Agreements for the organisation's company partners (Technologies used: Google Apps Script, Google Sheets, Google Docs)"
         ]
