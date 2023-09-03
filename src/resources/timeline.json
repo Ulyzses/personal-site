@@ -1,23 +1,12 @@
 [
     {
-        "title": "Constitutional Amendments Team Representative",
+        "title": "Automation Developer",
         "affiliation": "UP Association of Computer Science Majors (UP CURSOR)",
         "type": "voluntary",
         "startDate": "2023-05",
         "endDate": "present",
         "description": [
-            "Represented the External Affairs Committee in the Constitutional Amendments Team, which aims to amend UP CURSOR's constitution to better reflect the current state of the organisation"
-        ]
-    },
-    {
-        "title": "Programs Manager",
-        "affiliation": "UP Association of Computer Science Majors (UP CURSOR)",
-        "type": "voluntary",
-        "startDate": "2023-03",
-        "endDate": "present",
-        "description": [
-            "Created the program flow for Handog Kaalaman, UP CURSOR's flagship outreach program that aims to cultivate computer literacy in underprivileged communities",
-            "Handled the creation of lecture materials related to web development for use in the program"
+            "Created scripts which streamlined internal processes in multiple stages of the organisation's application process"
         ]
     },
     {
@@ -33,13 +22,25 @@
         ]
     },
     {
-        "title": "Automation Developer",
+        "title": "CURSOR Week 2023 Overall Co-Head",
+        "affiliation":"UP Association of Computer Science Majors (UP CURSOR)",
+        "type": "voluntary",
+        "startDate": "2023-08",
+        "endDate": "2023-09",
+        "description": [
+            "Oversaw the planning and execution of CURSOR Week 2023, a collection of events for UP CURSOR's 40th anniversary",
+            "Managed a team of 22 members during the organisation of the event"
+        ]
+    },
+    {
+        "title": "Programs Manager",
         "affiliation": "UP Association of Computer Science Majors (UP CURSOR)",
         "type": "voluntary",
-        "startDate": "2023-02",
-        "endDate": "present",
+        "startDate": "2023-03",
+        "endDate": "2023-07",
         "description": [
-            "Created scripts which streamlined internal processes in multiple stages of the organisation's application process"
+            "Created the program flow for Handog Kaalaman, UP CURSOR's flagship outreach program that aims to cultivate computer literacy in underprivileged communities",
+            "Handled the creation of lecture materials related to web development for use in the program"
         ]
     },
     {
@@ -69,7 +70,7 @@
         "affiliation": "UP Career Assistance Program for Engineering Students (UP CAPES)",
         "type": "voluntary",
         "startDate": "2022-09",
-        "endDate": "present",
+        "endDate": "2023-05",
         "description": [
             "Created an internal script that automatically generates bespoke Memorandum of Agreements for the organisation's company partners (Technologies used: Google Apps Script, Google Sheets, Google Docs)"
         ]
