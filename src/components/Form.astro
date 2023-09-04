@@ -10,7 +10,6 @@ const { name, title } = Astro.props as Props;
 <form id={name} action="https://getform.io/f/5b465511-db63-4e1a-a9b4-2f9d98a21434" method="POST">
     {title && <h3>{title}</h3>}
     <slot />
-    <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
 </form>
 
 <style>
@@ -21,12 +20,3 @@ form {
     border: 1px solid #e0e0e0;
 }
 </style>
-
-<script>
-    grecaptcha.ready(function() {
-        grecaptcha.execute('6LfLh_snAAAAAFCwZo41hMmJRuDVKqd8BoPottzG', {action: 'homepage'})
-        .then(function(token) {
-            document.getElementById('captchaResponse').value = token;
-        });
-      });
- </script>
